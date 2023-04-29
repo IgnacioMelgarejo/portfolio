@@ -10,22 +10,22 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer',
+    description: 'I carry out projects in which I am in charge of the UI and UX design',
     link: 'Learn more'
   },
   {
-    name: 'Development',
-    description: 'soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer',
+    name: 'Back-End',
+    description: 'Work on projects using ,JavasScript, Postgres, Sequelize, NodeJS, Express',
     link: 'Learn more'
   },
   {
-    name: 'Digital Marketing',
-    description: 'soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer',
+    name: 'Front-End',
+    description: 'Work on projects using CSS, HTML, REACT, REDUX',
     link: 'Learn more'
   },
   {
-    name: 'Product Branding',
-    description: 'soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer',
+    name: 'Scrum Methodology',
+    description: 'I carried out group and individual projects using scrum methodology',
     link: 'Learn more'
   }
 ]

@@ -23,7 +23,7 @@ const Work = () => {
           <div>
             <h2 className='h2 leading-tight text-accent'> My Lastest <br /> work.</h2>
             <p className='max-w-sm mb-16'>
-              soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer
+            I try to work focusing on the design, the aesthetics of my pages and their best utilities
             </p>
             <button className='btn btn-sm'> Vieww all projects</button>
           </div>

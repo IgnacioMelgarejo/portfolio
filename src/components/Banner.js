@@ -38,7 +38,7 @@ const Banner = () => {
             />
           </motion.div>
           <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            Hello! I am a full stack developer and a student of the Technical in Programming. My experience is based on projects from small applications to complex websites
+          Hello! I am a full stack developer and a programming university student. Enthusiastic about new technologies and knowledge
           </motion.p>
           <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
             <button className='btn btn-lg'>Contact me</button>

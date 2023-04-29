@@ -33,7 +33,7 @@ const About = () => {
           <h2 className='h2 text-accent'>About me.</h2>
           <h3 className='h3 mb-4'>Im a full stack developer and studen for Tech. in Programing</h3>
           <p className='mb-6'>
-            soy developer argentino con experienca en back-end y front-end con mucha creatividad y ganas de crecer
+            I am an Argentinian developer with experience in back-end and front-end with a lot of creativity and desire to grow.
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -41,20 +41,20 @@ const About = () => {
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ?
-                    <CountUp start={0} end={13} duration={3} /> : null}
-                k+
+                     <CountUp  start={0} end={+700} duration={3} /> : null}
+               
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                Years of <br />
-                Experience
+              hs of study <br />
+              in henry
               </div>
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ?
-                    <CountUp start={0} end={13} duration={3} /> : null}
-                k+
+                    <CountUp start={0} end={4} duration={3} /> : null}
+                
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                 Proyects <br />
