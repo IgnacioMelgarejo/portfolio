@@ -1,32 +1,33 @@
 import React from 'react';
 //icons
 
-import { BsArrowUpRight } from 'react-icons/bs';
+import { BsCheckLg} from 'react-icons/bs';
 //import 
 import { motion } from 'framer-motion'
 //variants
 import { fadeIn } from '../variants';
+// import {DiJavascript,DiCss3,DiReact,DiGit,DiPostgresql,DiMysql,} from 'react-icons/di'
 
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'I carry out projects in which I am in charge of the UI and UX design',
-    link: 'Learn more'
+    description:'design and layout of the pages',
+    
   },
   {
     name: 'Back-End',
-    description: 'Work on projects using ,JavasScript, Postgres, Sequelize, NodeJS, Express',
-    link: 'Learn more'
+    description: 'Work on projects using JavasScript, Postgres, Sequelize, NodeJS, Express',
+    
   },
   {
     name: 'Front-End',
     description: 'Work on projects using CSS, HTML, REACT, REDUX',
-    link: 'Learn more'
+    
   },
   {
     name: 'Scrum Methodology',
     description: 'I carried out group and individual projects using scrum methodology',
-    link: 'Learn more'
+    
   }
 ]
 
@@ -39,19 +40,21 @@ const Services = () => {
           variants={fadeIn('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What i Do</h2>
           <h3 className='h3 max-w-[455px] mb-16'>Im a full stack developer and studen for Tech. in Programing
           </h3>
+          <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
           <button className='btn btn-sm'>See my work</button>
+          </a>
         </motion.div>
         {/*service */}
         <motion.div
           variants={fadeIn('left', 0.5)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           {/*service list */}
           <div>{services.map((service, index) => {
@@ -65,7 +68,7 @@ const Services = () => {
                 </div>
                 <div className='flex flex-col flex-1 items-end'>
                   <a href='.' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                    <BsArrowUpRight />
+                    <BsCheckLg />
                   </a>
                   <a href='.' className='text-gradient text-sm'>{link}</a>
 

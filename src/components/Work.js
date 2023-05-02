@@ -13,19 +13,19 @@ const Work = () => {
   return <section className='section' id='work'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row gap-x-10'>
-        <motion.div 
-        variants={fadeIn('right', 0.3)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+        <motion.div
+          variants={fadeIn('right', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: true, amount: 0.3 }}
+          className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/*text*/}
           <div>
             <h2 className='h2 leading-tight text-accent'> My Lastest <br /> work.</h2>
             <p className='max-w-sm mb-16'>
-            I try to work focusing on the design, the aesthetics of my pages and their best utilities
+              I try to work focusing on the design, the aesthetics of my pages and their best utilities
             </p>
-            <button className='btn btn-sm'> Vieww all projects</button>
+            <button className='btn btn-sm'> View all projects</button>
           </div>
           {/*image*/}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-x1'>
@@ -44,11 +44,11 @@ const Work = () => {
           </div>
         </motion.div>
         <motion.div
-        variants={fadeIn('left', 0.2)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{ once: false, amount: 0.3 }}
-         className='flex-1 flex flex-col gap-y-10'>
+          variants={fadeIn('left', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: true, amount: 0.3 }}
+          className='flex-1 flex flex-col gap-y-10'>
           {/*image2*/}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-x1'>
             {/*overbyo */}
@@ -79,7 +79,7 @@ const Work = () => {
               <span className='text-3-1 text.white'>Project Title</span>
             </div>
           </div>
-          
+
         </motion.div>
       </div>
     </div>

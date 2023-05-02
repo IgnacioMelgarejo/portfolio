@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 //img
 import image from '../assets/moon.png';
 //icons 
@@ -18,10 +19,10 @@ const Banner = () => {
 
         {/* text*/}
         <div className='flex-1 text-center font-secondary lg:text-left'>
-          <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='text-[25px] font-bold leading-[0.8] lg:text-[70px]'>
+          <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='text-[25px] font-bold leading-[0.8] lg:text-[70px]'>
             IGNACIO <span>MELGAREJO</span>
           </motion.h1>
-          <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leanding-[1]'>
+          <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>i am a</span>
             <TypeAnimation sequence={[
               'Developer',
@@ -37,16 +38,22 @@ const Banner = () => {
               repeat={Infinity}
             />
           </motion.div>
-          <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>
-          Hello! I am a full stack developer and a programming university student. Enthusiastic about new technologies and knowledge
+          <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>
+            Hello! I am a full stack developer and a programming university student. Enthusiastic about new technologies and knowledge
           </motion.p>
-          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <button className='btn btn-lg'>Contact me</button>
-            <a href='·' className='text-gradient btn-link'>My portafolio</a>
+          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+
+            <Link to='contact' activeClass='active'
+              smooth={true}
+              spy={true}>
+              <button className='btn btn-lg'>Contact me</button>
+
+            </Link>
+            <a href='.' className='text-gradient btn-link'>Download resume</a>
           </motion.div>
           {/* sociales */}
 
-          <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }}
+          <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href='https://www.linkedin.com/in/ignacio-melgarejo-2b16a61b9/'>
               <FaLinkedin />
