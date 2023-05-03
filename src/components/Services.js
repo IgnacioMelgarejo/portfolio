@@ -51,12 +51,13 @@ const services = [
       <div>
         <SiExpress className="mr-6 text-2xl md:text-4xl" />
       </div>
-      <div>
-        <SiTypescript className="mr-6 text-2xl md:text-3xl" />
-      </div>
 
       <div>
         <SiSequelize className="mr-6 text-2xl md:text-3xl" />
+      </div>
+      
+      <div>
+        <SiTypescript className="mr-6 text-2xl md:text-3xl" />
       </div>
 
     </div>,
