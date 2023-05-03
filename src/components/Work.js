@@ -25,7 +25,9 @@ const Work = () => {
             <p className='max-w-sm mb-16'>
               I try to work focusing on the design, the aesthetics of my pages and their best utilities
             </p>
-            <button className='btn btn-sm'> View all projects</button>
+            <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
+              <button className='btn btn-sm'> View all projects</button>
+            </a>
           </div>
           {/*image*/}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-x1'>

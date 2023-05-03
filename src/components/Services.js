@@ -1,33 +1,81 @@
 import React from 'react';
 //icons
 
-import { BsCheckLg} from 'react-icons/bs';
+import { BsCheckLg } from 'react-icons/bs';
 //import 
 import { motion } from 'framer-motion'
 //variants
 import { fadeIn } from '../variants';
-// import {DiJavascript,DiCss3,DiReact,DiGit,DiPostgresql,DiMysql,} from 'react-icons/di'
+import { DiJavascript1, DiCss3, DiReact, DiGit, DiPostgresql, DiMysql, } from 'react-icons/di'
+import { SiRedux, SiExpress, SiTypescript, SiSequelize, SiTailwindcss } from 'react-icons/si'
+import { AiOutlineHtml5 } from 'react-icons/ai'
+import { FaNode } from 'react-icons/fa'
 
 const services = [
   {
-    name: 'UI/UX Design',
-    description:'design and layout of the pages',
-    
+    name: 'My Skils',
+    description: <div className="flex flex-wrap justify-start">
+
+      <div>
+        <DiJavascript1 className="mr-6 text-3xl md:text-5xl" />
+      </div>
+      <DiReact className="mr-6 text-3xl md:text-5xl" />
+      <div>
+        <DiGit className="mr-6 text-3xl md:text-5xl" />
+      </div>
+      <div>
+        <FaNode className="mr-6 text-3xl md:text-5xl" />
+      </div>
+
+      <div>
+        <AiOutlineHtml5 className="mr-6 text-3xl md:text-4xl" />
+      </div>
+
+      <div>
+        <DiMysql className="mr-6 text-3xl md:text-5xl" />
+      </div>
+      <div>
+        <DiPostgresql className="mr-6 text-3xl md:text-4xl" />
+      </div>
+
+
+
+      <div>
+        <DiCss3 className="mr-6 text-3xl md:text-4xl" />
+      </div>
+
+      <div>
+        <SiRedux className="mr-6 text-2xl md:text-3xl" />
+      </div>
+
+      <div>
+        <SiExpress className="mr-6 text-2xl md:text-4xl" />
+      </div>
+      <div>
+        <SiTypescript className="mr-6 text-2xl md:text-3xl" />
+      </div>
+
+      <div>
+        <SiSequelize className="mr-6 text-2xl md:text-3xl" />
+      </div>
+
+    </div>,
+
   },
   {
     name: 'Back-End',
     description: 'Work on projects using JavasScript, Postgres, Sequelize, NodeJS, Express',
-    
+
   },
   {
     name: 'Front-End',
     description: 'Work on projects using CSS, HTML, REACT, REDUX',
-    
+
   },
   {
     name: 'Scrum Methodology',
     description: 'I carried out group and individual projects using scrum methodology',
-    
+
   }
 ]
 
@@ -46,7 +94,7 @@ const Services = () => {
           <h3 className='h3 max-w-[455px] mb-16'>Im a full stack developer and studen for Tech. in Programing
           </h3>
           <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
-          <button className='btn btn-sm'>See my work</button>
+            <button className='btn btn-sm'>See my work</button>
           </a>
         </motion.div>
         {/*service */}
