@@ -108,17 +108,16 @@ const Services = () => {
             //destructure service
             const { description, name, link } = service;
             return (
-              <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+              <div className='border-b border-white/20 h-[150px] mb-[38px] flex' key={index}>
                 <div className='max-w-[476px]'>
                   <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
-                  <p className='font-secondary leading-tight'>{description}</p>
+                  <p className='font-secondary leading-tight text-base md:text-sm'>{description}</p>
                 </div>
                 <div className='flex flex-col flex-1 items-end'>
                   <a href='.' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                     <BsCheckLg />
                   </a>
                   <a href='.' className='text-gradient text-sm'>{link}</a>
-
                 </div>
               </div>
             )

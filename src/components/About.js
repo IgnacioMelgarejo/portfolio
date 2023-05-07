@@ -34,7 +34,7 @@ const About = () => {
           <h2 className='h2 text-accent'>About me</h2>
           <h3 className='h3 mb-4'>Programming student and certified full stack developer</h3>
           <p className='mb-6'>
-            I am an Argentinian developer with experience in back-end and front-end with a lot of creativity and desire to grow.
+          I am a professional with a positive and motivated attitude, always willing to learn and improve in my work. I consider myself self-taught, dedicated with passion and tenacity to each project in which I am involved, which allows me to meet quality objectives and delivery times.
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
