@@ -31,8 +31,8 @@ const About = () => {
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
           classname='flex-1 text-center justify-center'>
-          <h2 className='h2 text-accent'>About me.</h2>
-          <h3 className='h3 mb-4'>Im a full stack developer and studen for Tech. in Programing</h3>
+          <h2 className='h2 text-accent'>About me</h2>
+          <h3 className='h3 mb-4'>Programming student and certified full stack developer</h3>
           <p className='mb-6'>
             I am an Argentinian developer with experience in back-end and front-end with a lot of creativity and desire to grow.
           </p>

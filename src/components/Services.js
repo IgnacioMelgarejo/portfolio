@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 //variants
 import { fadeIn } from '../variants';
 import { DiJavascript1, DiCss3, DiReact, DiGit, DiPostgresql, DiMysql, } from 'react-icons/di'
-import { SiRedux, SiExpress, SiTypescript, SiSequelize, SiTailwindcss } from 'react-icons/si'
+import { SiRedux, SiExpress, SiTypescript, SiSequelize} from 'react-icons/si'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FaNode } from 'react-icons/fa'
 
@@ -38,8 +38,6 @@ const services = [
         <DiPostgresql className="mr-6 text-3xl md:text-4xl" />
       </div>
 
-
-
       <div>
         <DiCss3 className="mr-6 text-3xl md:text-4xl" />
       </div>
@@ -65,17 +63,17 @@ const services = [
   },
   {
     name: 'Back-End',
-    description: 'Work on projects using JavasScript, Postgres, Sequelize, NodeJS, Express',
+    description: 'Creation and maintenance of web applications, from the design of the architecture to the implementation of business logic, databases and the integration of external services through APIs.',
 
   },
   {
     name: 'Front-End',
-    description: 'Work on projects using CSS, HTML, REACT, REDUX',
+    description: 'Design and development of scalable web components and applications, integrating frameworks and web services. Implementing good performance and optimization practices.',
 
   },
   {
     name: 'Scrum Methodology',
-    description: 'I carried out group and individual projects using scrum methodology',
+    description: 'Working in multidisciplinary teams, participating in the design of sprints, definition of user stories, task estimation, progress monitoring and feedback.',
 
   }
 ]
@@ -92,7 +90,7 @@ const Services = () => {
           viewport={{ once: true, amount: 0.3 }}
           className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What i Do</h2>
-          <h3 className='h3 max-w-[455px] mb-16'>Im a full stack developer and studen for Tech. in Programing
+          <h3 className='h3 max-w-[455px] mb-16'>Design, development and maintenance of web applications
           </h3>
           <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
             <button className='btn btn-sm'>See my work</button>

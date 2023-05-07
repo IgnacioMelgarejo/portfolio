@@ -23,7 +23,7 @@ const Work = () => {
           <div>
             <h2 className='h2 leading-tight text-accent'> My Lastest <br /> work.</h2>
             <p className='max-w-sm mb-16'>
-              I try to work focusing on the design, the aesthetics of my pages and their best utilities
+              I try to work focusing on the aesthetics of my pages and their best utilities
             </p>
             <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
               <button className='btn btn-sm'> View all projects</button>
@@ -37,11 +37,11 @@ const Work = () => {
             <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
             {/*preTitel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Desing</span>
+              <span className='text-gradient'>Play Masters</span>
             </div>
             {/*titel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3-1 text.white'>Project Title</span>
+              <span className='text-3-1 text.white'>Games app</span>
             </div>
           </div>
         </motion.div>
@@ -59,11 +59,11 @@ const Work = () => {
             <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt='' />
             {/*preTitel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Desing</span>
+              <span className='text-gradient'>Doggies</span>
             </div>
             {/*titel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3-1 text.white'>Project Title</span>
+              <span className='text-3-1 text.white'>App with dog breed information</span>
             </div>
           </div>
           {/*image3*/}
@@ -71,14 +71,14 @@ const Work = () => {
             {/*overbyo */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/*img */}
-            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
+            <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='https://tv.laruinarecords.cl/' />
             {/*preTitel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Desing</span>
+              <span className='text-gradient'>La Ruina</span>
             </div>
             {/*titel */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3-1 text.white'>Project Title</span>
+              <span className='text-3-1 text.white'>Music app</span>
             </div>
           </div>
 
