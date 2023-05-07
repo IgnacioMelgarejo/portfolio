@@ -22,15 +22,21 @@ const Banner = () => {
           <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='text-[25px] font-bold leading-[0.8] lg:text-[70px]'>
             IGNACIO <span>MELGAREJO</span>
           </motion.h1>
-          <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leanding-[1]'>
+          <motion.div
+            variants={fadeIn('up', 0.4)}
+            initial='hidden' whileInView={'show'}
+            viewport={{ once: true, amount: 0.7 }}
+            className='mb-6 text-[36px] lg:text-[60px] 
+          font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>i am a</span>
             <TypeAnimation sequence={[
               'Developer',
               2000,
-              'Autodidactic',
+              'Self-taught',
               2000,
               'Student',
-              2000
+              2000,
+              
             ]}
               speed={50}
               className='text-accent'
@@ -38,10 +44,19 @@ const Banner = () => {
               repeat={Infinity}
             />
           </motion.div>
-          <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            Hello! I am a full stack developer and a programming university student. Enthusiastic about new technologies and knowledge
+          <motion.p 
+          variants={fadeIn('up', 0.5)} 
+          initial='hidden' whileInView={'show'} 
+          viewport={{ once: true, amount: 0.7 }} 
+          className='mb-8 max-w-lg mx-auto lg:mx-0'>
+            Hello! I am an Argentine full stack developer, oriented to web development and university student. Enthusiastic about new technologies and knowledge.
           </motion.p>
-          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+          <motion.div 
+          variants={fadeIn('up', 0.6)} 
+          initial='hidden' 
+          whileInView={'show'} 
+          viewport={{ once: true, amount: 0.7 }} 
+          className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
             <Link to='contact' activeClass='active'
               smooth={true}

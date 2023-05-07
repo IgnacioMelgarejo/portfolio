@@ -21,7 +21,7 @@ const Work = () => {
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/*text*/}
           <div>
-            <h2 className='h2 leading-tight text-accent'> My Lastest <br /> work.</h2>
+            <h2 className='h2 leading-tight text-accent'> My Lastests <br /> work.</h2>
             <p className='max-w-sm mb-16'>
               I try to work focusing on the aesthetics of my pages and their best utilities
             </p>

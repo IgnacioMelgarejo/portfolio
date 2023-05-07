@@ -13,7 +13,7 @@ import { FaNode } from 'react-icons/fa'
 
 const services = [
   {
-    name: 'My Skils',
+    name: 'My tech skills',
     description: <div className="flex flex-wrap justify-start">
 
       <div>
@@ -63,7 +63,7 @@ const services = [
   },
   {
     name: 'Back-End',
-    description: 'Creation and maintenance of web applications, from the design of the architecture to the implementation of business logic, databases and the integration of external services through APIs.',
+    description: 'I work in the creation and maintenance, from the design of the architecture to the implementation of business logic, databases and the integration of external services through APIs.',
 
   },
   {
@@ -111,7 +111,7 @@ const Services = () => {
               <div className='border-b border-white/20 h-[150px] mb-[38px] flex' key={index}>
                 <div className='max-w-[476px]'>
                   <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
-                  <p className='font-secondary leading-tight text-base md:text-sm'>{description}</p>
+                  <p className='font-secondary leading-tight text-base md:text-lg'>{description}</p>
                 </div>
                 <div className='flex flex-col flex-1 items-end'>
                   <a href='.' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>

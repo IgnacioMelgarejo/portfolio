@@ -32,9 +32,9 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           classname='flex-1 text-center justify-center'>
           <h2 className='h2 text-accent'>About me</h2>
-          <h3 className='h3 mb-4'>Programming student and certified full stack developer</h3>
+          <h3 className='h3 mb-4'>Programming student and certified full stack</h3>
           <p className='mb-6'>
-          I am a professional with a positive and motivated attitude, always willing to learn and improve in my work. I consider myself self-taught, dedicated with passion and tenacity to each project in which I am involved, which allows me to meet quality objectives and delivery times.
+          I am a professional with a positive and motivated attitude, always willing to learn and improve in my work.<br/> I consider me self-taught, dedicated with passion and tenacity to each project in which I am involved,<br/> thereby allows me to meet quality objectives and delivery times.
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -42,7 +42,7 @@ const About = () => {
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
                   inView ?
-                    <CountUp start={0} end={+700} duration={3} /> : null}
+                    <CountUp start={0} end={700} duration={3} /> : null}
 
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
@@ -57,6 +57,7 @@ const About = () => {
                     <CountUp start={0} end={4} duration={3} /> : null}
 
               </div>
+              +
               <div className='font-primary text-sm tracking-[2px]'>
                 Proyects <br />
                 Completed
