@@ -36,7 +36,6 @@ const Banner = () => {
               2000,
               'Student',
               2000,
-              
             ]}
               speed={50}
               className='text-accent'
@@ -44,19 +43,19 @@ const Banner = () => {
               repeat={Infinity}
             />
           </motion.div>
-          <motion.p 
-          variants={fadeIn('up', 0.5)} 
-          initial='hidden' whileInView={'show'} 
-          viewport={{ once: true, amount: 0.7 }} 
-          className='mb-8 max-w-lg mx-auto lg:mx-0'>
+          <motion.p
+            variants={fadeIn('up', 0.5)}
+            initial='hidden' whileInView={'show'}
+            viewport={{ once: true, amount: 0.7 }}
+            className='mb-8 max-w-lg mx-auto lg:mx-0'>
             Hello! I am an Argentine full stack developer, oriented to web development and university student. Enthusiastic about new technologies and knowledge.
           </motion.p>
-          <motion.div 
-          variants={fadeIn('up', 0.6)} 
-          initial='hidden' 
-          whileInView={'show'} 
-          viewport={{ once: true, amount: 0.7 }} 
-          className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+          <motion.div
+            variants={fadeIn('up', 0.6)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0.7 }}
+            className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
             <Link to='contact' activeClass='active'
               smooth={true}

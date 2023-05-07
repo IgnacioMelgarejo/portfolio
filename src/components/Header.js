@@ -9,7 +9,7 @@ const Header = () => {
       <a href='·' className='text-gradient btn-link lg:text-[23px]'>IGNACIO <br/> <span className='text-white lg:text-[23px]'>MELGAREJO</span></a>
 
       {/*button*/}
-      <button className='btn btn-sm'>languaje En</button>
+      <button className='btn btn-sm'>Languaje En</button>
 
     </div>
 
