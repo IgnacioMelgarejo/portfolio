@@ -7,7 +7,7 @@ import { fadeIn } from '../variants'
 //img
 import img2 from '../assets/dogss.jpg'
 import img3 from '../assets/la-ruina1.jpg'
-import img1 from '../assets/play-masters.jpg'
+import img1 from '../assets/work-portfolio.png'
 
 const Work = () => {
   return <section className='section' id='work'>
