@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 //img
-import img1 from '../assets/portfolio-img1.png'
+import img2 from '../assets/dogss.jpg'
 import img3 from '../assets/la-ruina1.jpg'
-import img2 from '../assets/portfolio-img3.png'
+import img1 from '../assets/play-masters.jpg'
 
 const Work = () => {
   return <section className='section' id='work'>
