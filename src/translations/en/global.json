@@ -8,6 +8,44 @@
         "presentation":"Hello! I am an Argentine full stack developer, oriented to web development and university student. Enthusiastic about new technologies and knowledge.",
         "contactme":"Contact me",
         "resume":"Download resume"
+    },
+    "about":{
+        "about":"About me",
+        "title":"Programming student and certified full stack web",
+        "content":"I am a professional with a positive and motivated attitude, always willing to learn and improve in my work.I consider me self-taught, dedicated with passion and tenacity to each project in which I am involved, thereby allows me to meet quality objectives and delivery times.",
+        "hs":"hs of study",
+        "inH":"in henry",
+        "inU":"in University",
+        "projects":"proyects",
+        "worked":"Worked",
+        "m":"My portafolio"
+    },
+    "service":{
+        "back":"Back-End",
+        "backD":"I work in the creation and maintenance, from the design of the architecture to the implementation of business logic, databases and the integration of external services through APIs.",
+        "front":"Front-End",
+        "frontD":"Design and development of scalable web components and applications, integrating frameworks and web services. Implementing good performance and optimization practices",
+        "scrum":"Scrum Methodology",
+        "scrumD":"Working in multidisciplinary teams, participating in the design of sprints, definition of user stories, task estimation, progress monitoring and feedback.",
+        "iDo":"What i Do",
+        "design":"Design, development and maintenance of web applications",
+        "see":"See my work",
+        "skills":"My tech skills"
+    },
+    "work":{
+        "last":"My Lastests ",
+        "work":"work.",
+        "try":"I try to work focusing on the aesthetics of my pages and their best utilities",
+        "all":"View all projects",
+        "dog":"App with dog breed information"
+    },
+    "contact":{
+        "get":"Get in touch",
+        "let":"Let's work",
+        "to":"together!",
+        "sending":"Sending...",
+        "send":"Send message",
+        "succes":"Successful email"
     }
     
 }
