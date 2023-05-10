@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll'
 //img
-import image from '../assets/nacho-portfolio-definitiva.png';
+import image from '../assets/nacho-banner.png';
 //icons 
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 //type animation
