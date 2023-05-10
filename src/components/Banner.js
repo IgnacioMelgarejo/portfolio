@@ -10,9 +10,14 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants'
+//translation
+import {useTranslation} from "react-i18next"
 
 
 const Banner = () => {
+
+  const [t, i18n] = useTranslation("global")
+
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
     <div className='container mx-auto'>
       <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
@@ -28,13 +33,13 @@ const Banner = () => {
             viewport={{ once: true, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
-            <span className=' text-white mr-4'>i am a</span>
+            <span className=' text-white mr-4'>{t("banner.i")}</span>
             <TypeAnimation sequence={[
-              'Developer',
+              t("banner.developer"),
               2000,
-              'Self-taught',
+              t("banner.self-taught"),
               2000,
-              'Student',
+              t("banner.student"),
               2000,
             ]}
               speed={50}
@@ -48,7 +53,9 @@ const Banner = () => {
             initial='hidden' whileInView={'show'}
             viewport={{ once: true, amount: 0.7 }}
             className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            Hello! I am an Argentine full stack developer, oriented to web development and university student. Enthusiastic about new technologies and knowledge.
+
+          {t("banner.presentation")}
+
           </motion.p>
           <motion.div
             variants={fadeIn('up', 0.6)}
@@ -60,10 +67,10 @@ const Banner = () => {
             <Link to='contact' activeClass='active'
               smooth={true}
               spy={true}>
-              <button className='btn btn-lg'>Contact me</button>
+              <button className='btn btn-lg'>{t("banner.contactme")}</button>
 
             </Link>
-            <a href='.' className='text-gradient btn-link'>Download resume</a>
+            <a href='.' className='text-gradient btn-link'>{t("banner.resume")}</a>
           </motion.div>
           {/* sociales */}
 
