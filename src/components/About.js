@@ -1,4 +1,5 @@
-import React from 'react';
+
+//About import React from 'react';
 //cpuntUp
 import CountUp from 'react-countup'
 //interseption 
@@ -7,15 +8,17 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { Link } from 'react-scroll'
+//translate
+import {useTranslation} from "react-i18next"
 
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
-  })
+  });
 
+  const [t, i18n] = useTranslation("global")
 
-  
-  // const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language;
 
   return <section className='section' id='about' ref={ref}>
 
@@ -35,10 +38,10 @@ const About = () => {
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
           classname='flex-1 text-center justify-center'>
-          <h2 className='h2 text-accent'></h2>
-          <h3 className='h3 mb-4'></h3>
-          <p className='mb-6 max-w-[600px]'>  
-          <br/>
+          <h2 className='h2 text-accent'>{t("about.about")}</h2>
+          <h3 className='h3 mb-4'>{t("about.title")}</h3>
+          <p className='mb-6 max-w-[600px]'>
+          {t("about.content")}<br/>
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -50,8 +53,8 @@ const About = () => {
                     +
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                hs of study <br />
-                in henry
+              {t("about.hs")}<br />
+               {t("about.inH")}
               </div>
             </div>
             <div>
@@ -63,8 +66,8 @@ const About = () => {
               </div>
 
               <div className='font-primary text-sm tracking-[2px]'>
-                hs of study <br />
-                in University
+              {t("about.hs")}<br />
+               {t("about.inU")}
               </div>
             </div>
             <div>
@@ -75,8 +78,8 @@ const About = () => {
                 +
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                Proyects <br />
-                Worked
+              {t("about.projects")} <br />
+              {t("about.worked")}
               </div>
             </div>
           </div>
@@ -87,9 +90,9 @@ const About = () => {
               smooth={true}
               spy={true}
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <button className='btn btn-lg'>{t("banner.contactme")}</button>
             </Link>
-            <a href='·' className='text-gradient btn-link'>My portafolio</a>
+            <a href='·' className='text-gradient btn-link'>{t("about.m")}</a>
           </div>
         </motion.div>
       </div>
