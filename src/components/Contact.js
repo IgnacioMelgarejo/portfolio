@@ -4,13 +4,9 @@ import { motion } from 'framer-motion';
 import { Toaster, toast } from 'react-hot-toast'
 //variants
 import { fadeIn } from '../variants'
-import {useTranslation} from "react-i18next"
 
 
 const Contact = () => {
-
-  const [t, i18n] = useTranslation("global")
-
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -24,7 +20,7 @@ const Contact = () => {
       .then((result) => {
         console.log(result.text);
         form.current.reset();
-        toast.success(t("contact.succes"));
+        toast.success('Successful email');
       })
       .catch((error) => {
         console.log(error.text);
@@ -48,8 +44,8 @@ const Contact = () => {
             className='flex-1 flex justify-start items-center'
           >
             <div>
-              <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>{t("contact.get")}</h4>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>{t("contact.let")} <br /> {t("contact.to")}</h2>
+              <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
+              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together!</h2>
             </div>
           </motion.div>
           {/*form*/}
@@ -91,7 +87,7 @@ const Contact = () => {
             ></textarea>
 
             <button className='btn btn-lg' type='submit' disabled={isSubmitting} >
-              {isSubmitting ? t("contact.sending") : t("contact.send")}
+              {isSubmitting ? 'Sending...' : 'Send message'}
             </button>
             <Toaster/>
           </motion.form>

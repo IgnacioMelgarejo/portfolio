@@ -7,6 +7,7 @@
         "studentEs":"Estudiante",
         "presentation":"¡Hola! Soy un desarrollador full stack argentino, orientado al desarrollo web y estudiante de la carrera Tec. Universitaria en programacion. Entusiasta por las nuevas tecnologías y el conocimiento.",
         "contactme":"Contáctame",
+<<<<<<< HEAD
         "resume":"Descargar CV"
     },
     "about":{
@@ -47,6 +48,8 @@
          "sending":"Enviando...",
          "send":"Enviar mensaje",
          "succes":"Mail exitoso"
+=======
+        "resume":"Descargar currículum"
+>>>>>>> parent of 6ec7088 (translate complete)
     }
-    
 }
