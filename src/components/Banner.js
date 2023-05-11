@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import {React} from 'react';
 import { Link } from 'react-scroll'
 //img
 import image from '../assets/nacho-banner.png';
 //icons 
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 //type animation
-import { TypeAnimation } from 'react-type-animation';
+
 //motion
 import { motion } from 'framer-motion';
 //variants
