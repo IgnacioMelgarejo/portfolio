@@ -27,7 +27,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
-          className='flex-1 flex-shrink-0 lg:bg-about bg-contain bg-no-repeat h-[580px] mix-blend-lighten bg-top hidden md:block '></motion.div>
+          className='flex-1  lg:bg-about bg-contain bg-no-repeat h-[580px] mix-blend-lighten bg-top hidden md:block max-w-none'></motion.div>
         {/*text*/}
         <motion.div
           variants={fadeIn('left', 0.5)}
@@ -37,8 +37,8 @@ const About = () => {
           classname='flex-1 text-center justify-center'>
           <h2 className='h2 text-accent'>{t("about.about")}</h2>
           <h3 className='h3 mb-4'>{t("about.title")}</h3>
-          <p className='mb-6'>
-          {t("about.content")}
+          <p className='mb-6 max-w-[600px]'>
+          {t("about.content")}<br/>
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>

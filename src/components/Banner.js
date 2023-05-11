@@ -11,12 +11,21 @@ import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants'
 //translation
-import {useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next"
+import { Translation } from 'react-i18next';
+import cvEs from '../pdf/CV Ignacio Melgarejo MARCH ENG.pdf'
+import cvEn from '../pdf/CV-Ignacio-Melgarejo-MARZO-2023-ESP.pdf'
 
 
 const Banner = () => {
 
   const [t, i18n] = useTranslation("global")
+
+  const currentLanguage = i18n.language;
+
+  const dev = t("banner.developer")
+
+
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
     <div className='container mx-auto'>
@@ -35,7 +44,7 @@ const Banner = () => {
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
             <TypeAnimation sequence={[
-              t("banner.developer"),
+              dev,
               2000,
               t("banner.self-taught"),
               2000,
@@ -47,6 +56,7 @@ const Banner = () => {
               wrapper='span'
               repeat={Infinity}
             />
+
           </motion.div>
           <motion.p
             variants={fadeIn('up', 0.5)}
@@ -54,7 +64,7 @@ const Banner = () => {
             viewport={{ once: true, amount: 0.7 }}
             className='mb-8 max-w-lg mx-auto lg:mx-0'>
 
-          {t("banner.presentation")}
+            {t("banner.presentation")}
 
           </motion.p>
           <motion.div
@@ -70,21 +80,26 @@ const Banner = () => {
               <button className='btn btn-lg'>{t("banner.contactme")}</button>
 
             </Link>
-            <a href='.' className='text-gradient btn-link'>{t("banner.resume")}</a>
+            <a href={currentLanguage === 'en' ? cvEs : cvEn} className='text-gradient btn-link' target='_blank' download>{t("banner.resume")}
+            </a>
           </motion.div>
           {/* sociales */}
 
           <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ once: true, amount: 0.7 }}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='https://www.linkedin.com/in/ignacio-melgarejo-2b16a61b9/'>
+
+            <a href='https://www.linkedin.com/in/ignacio-melgarejo-2b16a61b9/' target="_blank">
               <FaLinkedin />
             </a>
-            <a href='https://github.com/IgnacioMelgarejo'>
+
+            <a href='https://github.com/IgnacioMelgarejo' target="_blank">
               <FaGithub />
             </a>
-            <a href='https://twitter.com/IgnacioMelgar19'>
+
+            <a href='https://twitter.com/IgnacioMelgar19' target="_blank">
               <FaTwitter />
             </a>
+
           </motion.div>
         </div>
         {/* image*/}
