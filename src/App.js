@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <Banner />
       <Nav />
-      <div className='mt-10'> {/* Agregamos margen superior para separar del componente Banner */}
+      <div className='mt-10'> {/* margen superior para separar del componente Banner */}
         <About /> 
       </div>
       <div className='mt-10'>
