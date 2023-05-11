@@ -3,9 +3,9 @@
         "header":"Languaje En",
         "i":"i am",
         "developer":"Developer",
-        "self-taught":"Self-taught",
-        "student":"Student",
-        "presentation":"Hello! I am an Argentine full stack developer, oriented to web development and university student. Enthusiastic about new technologies and knowledge.",
+        "selfTaughtEn":"Self-taught",
+        "studentEn":"Student",
+        "presentation":"Hello! I am an Argentine full stack developer, oriented to web development and student of the Tec. University career in programming. Enthusiastic about new technologies and knowledge.",
         "contactme":"Contact me",
         "resume":"Download resume"
     },

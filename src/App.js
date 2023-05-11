@@ -15,11 +15,16 @@ const App = () => {
       <Header />
       <Banner />
       <Nav />
-      <About />
+      <div className='mt-10'> {/* Agregamos margen superior para separar del componente Banner */}
+        <About /> 
+      </div>
+      <div className='mt-10'>
       <Services />
+      </div>
       <Work />
       <Contact />
-      <div className='h-[4000px]'></div>
+      {/* <div className='h-[4000px]'></div> */}
+      <div className='pb-20'></div>
     </div>
   );
 };

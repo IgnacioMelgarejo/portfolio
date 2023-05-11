@@ -3,9 +3,9 @@
         "header":"Lenguaje Es",
         "i":"soy",
         "developer":"Desarrollador",
-        "self-taught":"Autodidacta",
-        "student":"Estudiante",
-        "presentation":"¡Hola! Soy un desarrollador full stack argentino, orientado al desarrollo web y estudiante universitario. Entusiasta por las nuevas tecnologías y el conocimiento.",
+        "selfTaughtEs":"Autodidacta",
+        "studentEs":"Estudiante",
+        "presentation":"¡Hola! Soy un desarrollador full stack argentino, orientado al desarrollo web y estudiante de la carrera Tec. Universitaria en programacion. Entusiasta por las nuevas tecnologías y el conocimiento.",
         "contactme":"Contáctame",
         "resume":"Descargar CV"
     },
@@ -38,7 +38,7 @@
         "work":"Trabajos",
         "try":"Trato de trabajar centrándome en la estética de mis páginas y sus mejores utilidades",
         "all":"Ver todos los proyectos",
-        "dog":"Aplicación con información sobre la razas"
+        "dog":"Aplicación con información sobre las razas"
     },
     "contact":{
         "get":"Ponete en contacto",

@@ -17,6 +17,8 @@ const About = () => {
 
   const [t, i18n] = useTranslation("global")
 
+  const currentLanguage = i18n.language;
+
   return <section className='section' id='about' ref={ref}>
 
     <div className='container mx-auto'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
 //img
 import image from '../assets/nacho-banner.png';
@@ -12,7 +12,9 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 //translation
 import { useTranslation } from "react-i18next"
-import { Translation } from 'react-i18next';
+
+import Typed from 'react-typed';
+
 import cvEs from '../pdf/CV Ignacio Melgarejo MARCH ENG.pdf'
 import cvEn from '../pdf/CV-Ignacio-Melgarejo-MARZO-2023-ESP.pdf'
 
@@ -23,8 +25,10 @@ const Banner = () => {
 
   const currentLanguage = i18n.language;
 
-  const dev = t("banner.developer")
+  const sequence = ['developer', 'Self-taught', 'Student'];
+  const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
 
+  const sequenceLang= currentLanguage === "es"? sequenceEs: sequence
 
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
@@ -43,35 +47,8 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
-            {currentLanguage === "es"?
-            <TypeAnimation sequence={[
-              "desarrollador",
-              2000,
-              "Autodidacta",
-              2000,
-              "Estudiante",
-              2000,
-            ]}
-              speed={50}
-              className='text-accent'
-              wrapper='span'
-              repeat={Infinity}
-            />
-            :
-            <TypeAnimation sequence={[
-              "developer",
-              2000,
-              "self-taught",
-              2000,
-              "student",
-              2000,
-            ]}
-              speed={50}
-              className='text-accent'
-              wrapper='span'
-              repeat={Infinity}
-            />
-            }
+            <Typed strings={sequenceLang} typeSpeed={50} loop className='text-accent'/>
+
           </motion.div>
           <motion.p
             variants={fadeIn('up', 0.5)}
