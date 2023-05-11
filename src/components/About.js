@@ -7,11 +7,14 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { Link } from 'react-scroll'
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
-  })
+  });
+
+  const [t, i18n] = useTranslation("global")
 
   const currentLanguage = i18n.language;
 
@@ -25,11 +28,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
-<<<<<<< HEAD
           className='flex-1  lg:bg-about bg-contain bg-no-repeat h-[580px] mix-blend-lighten bg-top hidden md:block max-w-none'></motion.div>
-=======
-          className='flex-1 lg:bg-about bg-contain bg-no-repeat h-[580px] mix-blend-lighten bg-top hidden md:block '></motion.div>
->>>>>>> parent of 6ec7088 (translate complete)
         {/*text*/}
         <motion.div
           variants={fadeIn('left', 0.5)}
@@ -37,17 +36,10 @@ const About = () => {
           whileInView={'show'}
           viewport={{ once: true, amount: 0.3 }}
           classname='flex-1 text-center justify-center'>
-<<<<<<< HEAD
           <h2 className='h2 text-accent'>{t("about.about")}</h2>
           <h3 className='h3 mb-4'>{t("about.title")}</h3>
           <p className='mb-6 max-w-[600px]'>
           {t("about.content")}<br/>
-=======
-          <h2 className='h2 text-accent'>About me</h2>
-          <h3 className='h3 mb-4'>Programming student and certified full stack web</h3>
-          <p className='mb-6'>
-            I am a professional with a positive and motivated attitude, always willing to learn and improve in my work.<br /> I consider me self-taught, dedicated with passion and tenacity to each project in which I am involved,<br /> thereby allows me to meet quality objectives and delivery times.
->>>>>>> parent of 6ec7088 (translate complete)
           </p>
           {/*start*/}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -59,8 +51,8 @@ const About = () => {
                     +
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                hs of study <br />
-                in henry
+              {t("about.hs")}<br />
+               {t("about.inH")}
               </div>
             </div>
             <div>
@@ -72,8 +64,8 @@ const About = () => {
               </div>
 
               <div className='font-primary text-sm tracking-[2px]'>
-                hs of study <br />
-                in University
+              {t("about.hs")}<br />
+               {t("about.inU")}
               </div>
             </div>
             <div>
@@ -84,8 +76,8 @@ const About = () => {
                 +
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                Proyects <br />
-                Worked
+              {t("about.projects")} <br />
+              {t("about.worked")}
               </div>
             </div>
           </div>
@@ -96,9 +88,9 @@ const About = () => {
               smooth={true}
               spy={true}
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <button className='btn btn-lg'>{t("banner.contactme")}</button>
             </Link>
-            <a href='·' className='text-gradient btn-link'>My portafolio</a>
+            <a href='·' className='text-gradient btn-link'>{t("about.m")}</a>
           </div>
         </motion.div>
       </div>

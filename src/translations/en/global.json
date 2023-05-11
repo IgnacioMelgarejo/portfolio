@@ -8,7 +8,6 @@
         "presentation":"Hello! I am an Argentine full stack developer, oriented to web development and student of the Tec. University career in programming. Enthusiastic about new technologies and knowledge.",
         "contactme":"Contact me",
         "resume":"Download resume"
-<<<<<<< HEAD
     },
     "about":{
         "about":"About me",
@@ -47,8 +46,6 @@
         "sending":"Sending...",
         "send":"Send message",
         "succes":"Successful email"
-=======
->>>>>>> parent of 6ec7088 (translate complete)
     }
     
 }
