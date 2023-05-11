@@ -43,12 +43,13 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
+            {currentLanguage === "es"?
             <TypeAnimation sequence={[
-              dev,
+              "desarrollador",
               2000,
-              t("banner.self-taught"),
+              "Autodidacta",
               2000,
-              t("banner.student"),
+              "Estudiante",
               2000,
             ]}
               speed={50}
@@ -56,7 +57,21 @@ const Banner = () => {
               wrapper='span'
               repeat={Infinity}
             />
-
+            :
+            <TypeAnimation sequence={[
+              "developer",
+              2000,
+              "self-taught",
+              2000,
+              "student",
+              2000,
+            ]}
+              speed={50}
+              className='text-accent'
+              wrapper='span'
+              repeat={Infinity}
+            />
+            }
           </motion.div>
           <motion.p
             variants={fadeIn('up', 0.5)}
