@@ -13,7 +13,7 @@ import { fadeIn } from '../variants'
 //translation
 import { useTranslation } from "react-i18next"
 
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 import cvEs from '../pdf/CV Ignacio Melgarejo MARCH ENG.pdf'
 import cvEn from '../pdf/CV-Ignacio-Melgarejo-MARZO-2023-ESP.pdf'
@@ -47,7 +47,7 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
-            <Typed strings={sequenceLang} typeSpeed={50} loop className='text-accent'/>
+            {/* <Typed strings={sequenceLang} typeSpeed={50} loop className='text-accent'/> */}
 
           </motion.div>
           <motion.p
