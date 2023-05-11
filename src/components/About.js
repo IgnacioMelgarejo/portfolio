@@ -13,6 +13,8 @@ const About = () => {
     threshold: 0.5,
   })
 
+
+  
   // const currentLanguage = i18n.language;
 
   return <section className='section' id='about' ref={ref}>
@@ -35,7 +37,7 @@ const About = () => {
           classname='flex-1 text-center justify-center'>
           <h2 className='h2 text-accent'></h2>
           <h3 className='h3 mb-4'></h3>
-          <p className='mb-6 max-w-[600px]'>
+          <p className='mb-6 max-w-[600px]'>  
           <br/>
           </p>
           {/*start*/}
