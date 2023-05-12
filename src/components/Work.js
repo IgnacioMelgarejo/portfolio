@@ -10,6 +10,9 @@ import img2 from '../assets/doggies.png'
 import img3 from '../assets/la-ruina.jpg'
 
 const Work = () => {
+
+  const [t, i18n] = useTranslation("global")
+
   return <section className='section' id='work'>
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row gap-x-10'>
@@ -21,12 +24,12 @@ const Work = () => {
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/*text*/}
           <div>
-            <h2 className='h2 leading-tight text-accent'> My Lastests <br /> work.</h2>
+            <h2 className='h2 leading-tight text-accent'>{t("work.last")} <br /> { t("work.work")}</h2>
             <p className='max-w-sm mb-16'>
-              I try to work focusing on the aesthetics of my pages and their best utilities
+            {t("work.try")}
             </p>
             <a href='https://github.com/IgnacioMelgarejo?tab=repositories'>
-              <button className='btn btn-sm'> View all projects</button>
+              <button className='btn btn-sm'>{t("work.all")}</button>
             </a>
           </div>
           {/*image*/}
@@ -69,7 +72,7 @@ const Work = () => {
               </div>
               {/*titel */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3-1 text.white'>App with dog breed information</span>
+                <span className='text-3-1 text.white'>{t("work.dog")}</span>
               </div>
             </div>
           </a>
