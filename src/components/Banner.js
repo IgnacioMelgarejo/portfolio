@@ -7,7 +7,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 //type animation
 import { TypeAnimation } from 'react-type-animation';
 //motion
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants'
 //translation
@@ -26,20 +26,23 @@ const Banner = () => {
 
   const currentLanguage = i18n.language;
 
-  const [sequenceLang, setSequenceLang] = useState([]);
+  // const [sequenceLang, setSequenceLang] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const sequence = ['developer', 'Self-taught', 'Student'];
+  const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
+
+  const sequenceLang = currentLanguage === "es" ? sequenceEs : sequence;
 
   useEffect(() => {
-    const currentLanguage = i18n.language;
-    const sequence = ['developer', 'Self-taught', 'Student'];
-    const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
-    const newSequence = currentLanguage === 'es' ? sequenceEs : sequence;
-    setSequenceLang(newSequence);
-  }, [i18n.language]);
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % sequenceLang.length);
+    }, 2000);
 
-  // const sequence = ['developer', 'Self-taught', 'Student'];
-  // const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
-
-  // const sequenceLang = currentLanguage === "es" ? sequenceEs : sequence;
+    return () => {
+      clearInterval(interval);
+    };
+  }, [sequenceLang.length]);
 
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
@@ -58,13 +61,18 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
-            <TypeAnimation
-              sequence={sequenceLang}
-              wrapper="span"
-              repeat={Infinity}
-              typingDelay={200}
-              className='text-accent'
-            />
+            <AnimatePresence exitBeforeEnter>
+              <motion.span
+                key={currentIndex}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+                className='text-accent'
+              >
+                {sequenceLang[currentIndex]}
+              </motion.span>
+            </AnimatePresence>
 
           </motion.div>
           <motion.p
