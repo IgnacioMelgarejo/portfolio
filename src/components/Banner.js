@@ -60,7 +60,7 @@ const Banner = () => {
             viewport={{ once: true, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
-            <span className=' text-white mr-4'>{t("banner.i")}</span>
+            <span className=' text-white mr-4 inline-block align-middle'>{t("banner.i")}</span>
             <AnimatePresence exitBeforeEnter>
               <motion.span
                 key={currentIndex}
