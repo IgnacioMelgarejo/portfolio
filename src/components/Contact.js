@@ -5,6 +5,7 @@ import { Toaster, toast } from 'react-hot-toast'
 //variants
 import { fadeIn } from '../variants'
 
+import { useTranslation } from "react-i18next"
 
 const Contact = () => {
 

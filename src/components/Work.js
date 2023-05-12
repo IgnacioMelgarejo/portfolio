@@ -9,6 +9,8 @@ import img1 from '../assets/play-masters.png'
 import img2 from '../assets/doggies.png'
 import img3 from '../assets/la-ruina.jpg'
 
+import { useTranslation } from "react-i18next"
+
 const Work = () => {
 
   const [t, i18n] = useTranslation("global")

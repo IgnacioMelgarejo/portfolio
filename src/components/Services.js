@@ -10,6 +10,8 @@ import { DiJavascript1, DiCss3, DiReact, DiGit, DiPostgresql, DiMysql, } from 'r
 import { SiRedux, SiExpress, SiTypescript, SiSequelize} from 'react-icons/si'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FaNode } from 'react-icons/fa'
+import { useTranslation } from "react-i18next"
+
 
 const Services = () => {
 
