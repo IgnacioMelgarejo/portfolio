@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useState, useEffect } from 'react';
 import { Link } from 'react-scroll'
 //img
 import image from '../assets/nacho-banner.png';
@@ -26,10 +26,20 @@ const Banner = () => {
 
   const currentLanguage = i18n.language;
 
-  const sequence = ['developer', 'Self-taught', 'Student'];
-  const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
+  const [sequenceLang, setSequenceLang] = useState([]);
 
-  const sequenceLang = currentLanguage === "es" ? sequenceEs : sequence
+  useEffect(() => {
+    const currentLanguage = i18n.language;
+    const sequence = ['developer', 'Self-taught', 'Student'];
+    const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
+    const newSequence = currentLanguage === 'es' ? sequenceEs : sequence;
+    setSequenceLang(newSequence);
+  }, [i18n.language]);
+
+  // const sequence = ['developer', 'Self-taught', 'Student'];
+  // const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
+
+  // const sequenceLang = currentLanguage === "es" ? sequenceEs : sequence;
 
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
@@ -51,8 +61,8 @@ const Banner = () => {
             <TypeAnimation
               sequence={sequenceLang}
               wrapper="span"
-              cursor={true}
               repeat={Infinity}
+              typingDelay={200}
               className='text-accent'
             />
 
