@@ -59,8 +59,8 @@ const Banner = () => {
             initial='hidden' whileInView={'show'}
             viewport={{ once: true, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[60px] 
-          font-secondary font-semibold uppercase leanding-[1]'>
-            <span className=' text-white mr-4 inline-block align-middle'>{t("banner.i")}</span>
+          font-secondary font-semibold uppercase leanding-[1] items-center '>
+            <span className=' text-white mr-4' >{t("banner.i")}</span>
             <AnimatePresence exitBeforeEnter>
               <motion.span
                 key={currentIndex}
@@ -69,6 +69,7 @@ const Banner = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
                 className='text-accent'
+                
               >
                 {sequenceLang[currentIndex]}
               </motion.span>
