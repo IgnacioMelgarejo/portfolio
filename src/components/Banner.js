@@ -1,11 +1,11 @@
-import {React} from 'react';
+import { React } from 'react';
 import { Link } from 'react-scroll'
 //img
 import image from '../assets/nacho-banner.png';
 //icons 
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 //type animation
-
+import { TypeAnimation } from 'react-type-animation';
 //motion
 import { motion } from 'framer-motion';
 //variants
@@ -14,6 +14,7 @@ import { fadeIn } from '../variants'
 import { useTranslation } from "react-i18next"
 
 // import Typed from 'react-typed';
+// import { Typewriter } from 'react-typewriter';
 
 import cvEs from '../pdf/CV Ignacio Melgarejo MARCH ENG.pdf'
 import cvEn from '../pdf/CV-Ignacio-Melgarejo-MARZO-2023-ESP.pdf'
@@ -28,7 +29,7 @@ const Banner = () => {
   const sequence = ['developer', 'Self-taught', 'Student'];
   const sequenceEs = ['desarrollador', 'Autodidacta', 'Estudiante'];
 
-  const sequenceLang= currentLanguage === "es"? sequenceEs: sequence
+  const sequenceLang = currentLanguage === "es" ? sequenceEs : sequence
 
 
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
@@ -47,7 +48,13 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1]'>
             <span className=' text-white mr-4'>{t("banner.i")}</span>
-            {/* <Typed strings={sequenceLang} typeSpeed={50} loop className='text-accent'/> */}
+            <TypeAnimation
+              sequence={sequenceLang}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              className='text-accent'
+            />
 
           </motion.div>
           <motion.p
