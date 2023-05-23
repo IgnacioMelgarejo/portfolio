@@ -16,8 +16,8 @@ import { useTranslation } from "react-i18next"
 // import Typed from 'react-typed';
 // import { Typewriter } from 'react-typewriter';
 
-import cvEs from '../pdf/CV Ignacio Melgarejo MARCH ENG.pdf'
-import cvEn from '../pdf/CV-Ignacio-Melgarejo-MARZO-2023-ESP.pdf'
+import cvEs from '../pdf/CV-MAYO-2023.pdf'
+import cvEn from '../pdf/CV-MAY-2023.pdf'
 
 
 const Banner = () => {
@@ -98,7 +98,7 @@ const Banner = () => {
               <button className='btn btn-lg'>{t("banner.contactme")}</button>
 
             </Link>
-            <a href={currentLanguage === 'en' ? cvEs : cvEn} className='text-gradient btn-link' target='_blank' download>{t("banner.resume")}
+            <a href={currentLanguage === 'en' ? cvEn : cvEs} className='text-gradient btn-link' target='_blank' download>{t("banner.resume")}
             </a>
           </motion.div>
           {/* sociales */}
