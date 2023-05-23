@@ -58,7 +58,7 @@ const Banner = () => {
             variants={fadeIn('up', 0.4)}
             initial='hidden' whileInView={'show'}
             viewport={{ once: true, amount: 0.7 }}
-            className='mb-6 text-[36px] lg:text-[60px] 
+            className='mb-6 mt-2 text-[36px] lg:text-[60px] 
           font-secondary font-semibold uppercase leanding-[1] items-center '>
             <span className=' text-white mr-4' >{t("banner.i")}</span>
             <AnimatePresence exitBeforeEnter>
