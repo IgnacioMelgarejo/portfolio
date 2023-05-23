@@ -16,8 +16,8 @@ import { useTranslation } from "react-i18next"
 // import Typed from 'react-typed';
 // import { Typewriter } from 'react-typewriter';
 
-import cvEs from '../pdf/CV-MAYO-2023.pdf'
-import cvEn from '../pdf/CV-MAY-2023.pdf'
+import cvEs from '../pdf/CV-MAYO-2023-IM.pdf'
+import cvEn from '../pdf/CV-MAY-2023-IM.pdf'
 
 
 const Banner = () => {
